@@ -1,0 +1,96 @@
+@import '../base/variable';
+@import '../base/commons';
+@import '../function/function';
+
+@media(min-width: 992px)
+{
+	.col-split-5
+	{
+		flex: 0 0 auto;
+		width: 20%;
+	}
+	.search-form
+	{
+		._form
+		{
+			._keyword
+			{
+				padding-right: rem(50);
+			}
+		}
+	}
+	.navigation
+	{
+		background: $primary-color;
+		ul
+		{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			list-style-type: none;
+			margin: 0;
+			li
+			{
+				a
+				{
+					color: white;
+					text-decoration: none;
+					display: inline-block;
+					padding: rem(7) rem(30);
+
+				}
+			}
+		}
+	}
+}
+@media(min-width: 1200px)
+{
+	html
+	{
+		font-size: .95rem;
+	}
+	.gx-10rem
+	{
+		--bs-gutter-x: 10rem;
+	}
+	
+	.why-choose-us
+	{
+		._right-content
+		{
+			padding-top: 2.2rem;
+			background-repeat: no-repeat;
+			background-size: 70% 100%;
+			background-position: right top;
+			
+		}
+	}
+	.search-form
+	{
+		._form
+		{
+			._keyword
+			{
+				padding-right: rem(180);
+			}
+		}
+	}
+	
+}
+@media(min-width: 1400px)
+{
+	.why-choose-us
+	{
+		.pre-check
+		{
+			line-height: 1.5rem;
+		}
+		._right-content
+		{
+			._box
+			{
+				max-width: 45%;
+			}
+		}
+	}
+}

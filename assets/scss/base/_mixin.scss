@@ -1,0 +1,10 @@
+@mixin shadow($blur: 12px, $spread: 2px, $color: #f4f4f4, $hoz: 0px, $ver: 0px)
+{
+	-webkit-box-shadow: $hoz $ver $blur $spread $color;
+	-moz-box-shadow: $hoz $ver $blur $spread $color;
+	box-shadow: $hoz $ver $blur $spread $color;
+}
+@mixin borderRadius($val: $rounded)
+{
+	border-radius: $val
+}
